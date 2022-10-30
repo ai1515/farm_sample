@@ -12,7 +12,7 @@ app = FastAPI()
 app.include_router(route_todo.router)
 app.include_router(route_auth.router)
 # ホワイトリストの設定
-origins = ['http://localhost:3000', 'https://fastapi-1436a.web.app']
+origins = ['http://localhost:3000', 'https://fastapi-11ccc.web.app']
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
